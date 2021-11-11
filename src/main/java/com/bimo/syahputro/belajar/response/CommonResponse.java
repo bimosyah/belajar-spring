@@ -1,4 +1,4 @@
-package bimo.syahputro.belajar.response;
+package com.bimo.syahputro.belajar.response;
 
 public class CommonResponse<T> {
     private String status;

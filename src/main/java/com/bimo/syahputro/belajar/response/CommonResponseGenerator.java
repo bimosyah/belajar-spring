@@ -1,4 +1,4 @@
-package bimo.syahputro.belajar.response;
+package com.bimo.syahputro.belajar.response;
 
 import org.springframework.stereotype.Component;
 

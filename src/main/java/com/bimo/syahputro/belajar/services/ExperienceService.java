@@ -1,6 +1,6 @@
-package bimo.syahputro.belajar.services;
+package com.bimo.syahputro.belajar.services;
 
-import bimo.syahputro.belajar.entities.ExperienceEntity;
+import com.bimo.syahputro.belajar.entities.ExperienceEntity;
 import org.springframework.stereotype.Component;
 
 import java.util.List;

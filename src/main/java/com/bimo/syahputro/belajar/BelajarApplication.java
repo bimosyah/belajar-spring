@@ -1,4 +1,4 @@
-package bimo.syahputro.belajar;
+package com.bimo.syahputro.belajar;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package bimo.syahputro.belajar.entities;
+package com.bimo.syahputro.belajar.entities;
 
 import javax.persistence.*;
 

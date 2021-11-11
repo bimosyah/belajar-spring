@@ -1,4 +1,4 @@
-package bimo.syahputro.belajar.swagger;
+package com.bimo.syahputro.belajar.swagger;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

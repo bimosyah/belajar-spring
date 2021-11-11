@@ -1,7 +1,7 @@
-package bimo.syahputro.belajar.services;
+package com.bimo.syahputro.belajar.services;
 
-import bimo.syahputro.belajar.entities.ExperienceEntity;
-import bimo.syahputro.belajar.repositories.ExperienceRepository;
+import com.bimo.syahputro.belajar.entities.ExperienceEntity;
+import com.bimo.syahputro.belajar.repositories.ExperienceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;

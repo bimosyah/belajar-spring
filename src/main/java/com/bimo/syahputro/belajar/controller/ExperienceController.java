@@ -1,9 +1,9 @@
-package bimo.syahputro.belajar.controller;
+package com.bimo.syahputro.belajar.controller;
 
-import bimo.syahputro.belajar.entities.ExperienceEntity;
-import bimo.syahputro.belajar.response.CommonResponse;
-import bimo.syahputro.belajar.response.CommonResponseGenerator;
-import bimo.syahputro.belajar.services.ExperienceService;
+import com.bimo.syahputro.belajar.entities.ExperienceEntity;
+import com.bimo.syahputro.belajar.response.CommonResponse;
+import com.bimo.syahputro.belajar.response.CommonResponseGenerator;
+import com.bimo.syahputro.belajar.services.ExperienceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -37,5 +37,11 @@ public class ExperienceController {
     @GetMapping(value = "experience/{id}")
     public CommonResponse<ExperienceEntity> getBydId(@PathVariable("id") int id){
         return commonResponseGenerator.successResponse(experienceService.getById(id),"sukses");
+    }
+
+    @DeleteMapping(value = "experience/{id}")
+    public CommonResponse<String> delete(@PathVariable("id") int id){
+        experienceService.delete(id);
+        return commonResponseGenerator.successResponse("","sukses");
     }
 }

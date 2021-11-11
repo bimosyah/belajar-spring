@@ -1,6 +1,6 @@
-package bimo.syahputro.belajar.repositories;
+package com.bimo.syahputro.belajar.repositories;
 
-import bimo.syahputro.belajar.entities.ExperienceEntity;
+import com.bimo.syahputro.belajar.entities.ExperienceEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
