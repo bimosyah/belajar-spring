@@ -1,4 +1,4 @@
-package bimo.syahputro.belajar;
+package com.bimo.syahputro.belajar;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
