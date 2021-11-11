@@ -3,9 +3,11 @@ package com.bimo.syahputro.belajar.services;
 import com.bimo.syahputro.belajar.entities.ExperienceEntity;
 import com.bimo.syahputro.belajar.repositories.ExperienceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+@Service
 public class ExperienceServiceImpl implements ExperienceService {
 
     @Autowired
