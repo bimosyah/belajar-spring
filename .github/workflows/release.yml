@@ -47,8 +47,6 @@ jobs:
           push: true
           tags: ${{ steps.prep.outputs.tags }}
           build-args: app_version=v${{ steps.get_version.outputs.version }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
