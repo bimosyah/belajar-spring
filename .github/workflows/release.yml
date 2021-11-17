@@ -39,14 +39,25 @@ jobs:
 
       - name: Build and push
         id: docker_build
-        uses: docker/build-push-action@v2
+        uses: mr-smithers-excellent/docker-build-push@v5
         with:
-          builder: ${{ steps.buildx.outputs.name }}
-          context: ./
-          file: Dockerfile
-          push: true
+          image: bimosyahputro88/belajar-springboot
           tags: ${{ steps.prep.outputs.tags }}
-          build-args: app_version=v${{ steps.get_version.outputs.version }}
+          registry: docker.io
+          dockerfile: Dockerfile
+          username: ${{ secrets.DOCKERHUB_USER }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
 
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
+
+
+#    - name: Build & push Docker image
+#      uses: mr-smithers-excellent/docker-build-push@v5
+#      with:
+#        image: bimosyahputro88/belajar-springboot
+#        tags: latest
+#        registry: docker.io
+#        dockerfile: Dockerfile
+#        username: ${{ secrets.DOCKERHUB_USER }}
+#        password: ${{ secrets.DOCKERHUB_PASSWORD }}
