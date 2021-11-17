@@ -43,7 +43,7 @@ jobs:
         with:
           builder: ${{ steps.buildx.outputs.name }}
           context: ./
-          file: ./Dockerfile
+          file: Dockerfile
           push: true
           tags: ${{ steps.prep.outputs.tags }}
           build-args: app_version=v${{ steps.get_version.outputs.version }}
