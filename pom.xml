@@ -79,6 +79,8 @@
 			<id>prod</id>
 			<properties>
 				<activatedProperties>prod</activatedProperties>
+				<userdb>${user}</userdb>
+				<passdb>${pass}</passdb>
 			</properties>
 		</profile>
 	</profiles>
