@@ -33,7 +33,7 @@ jobs:
         uses: mr-smithers-excellent/docker-build-push@v5
         with:
           image: bimosyahputro88/belajar-springboot
-          tags: $RELEASE_VERSION
+          tags: ${{ steps.vars.outputs.tag }}
           registry: docker.io
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKERHUB_USER }}
