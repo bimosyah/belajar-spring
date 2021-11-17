@@ -24,3 +24,13 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn -Duser=${{secrets.DB_USER}} -Dpass=${{secrets.DB_PASSWORD}} clean install -Pprod
+
+    - name: Build & push Docker image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: bimosyahputro88/belajar-springboot
+        tags: latest
+        registry: docker.io
+        dockerfile: Dockerfile
+        username: ${{ secrets.DOCKERHUB_USER }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
